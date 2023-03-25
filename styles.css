@@ -52,7 +52,7 @@ main {
 
 .about__title {
   color: var(--title-color);
-  font-weight: 600;
+  font-weight: 750;
 }
 .about__list {
   display: flex;
