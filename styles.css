@@ -1,7 +1,10 @@
 :root {
-  --title-color: #181818;
+  --title-color: #e8cfc6;
+  --shadow-color: #181818;
   --text-color: #383838;
-  --bg-color: #9999ff;
+  --bg-color: #4a2b7a;
+
+  --shadow-offset: 2px;
 }
 
 * {
@@ -22,13 +25,18 @@ main {
   width: calc(100% - 40px);
   min-height: calc(100vh - 40px);
   padding: 20px;
+  text-shadow:
+    calc(-1 * var(--shadow-offset)) calc(-1 * var(--shadow-offset)) 0 var(--shadow-color),
+    calc(var(--shadow-offset)) calc(-1 * var(--shadow-offset)) 0 var(--shadow-color),
+    calc(-1 * var(--shadow-offset)) calc(var(--shadow-offset)) 0 var(--shadow-color),
+    calc(var(--shadow-offset)) calc(var(--shadow-offset)) 0 var(--shadow-color);
 }
 
 .profile-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 3px solid var(--title-color);
+  border: 3px solid var(--shadow-color);
   object-fit: cover;
 }
 
@@ -82,31 +90,32 @@ main {
 
 .list-links > li {
   display: flex;
+  border-radius: 12px;
   justify-content: center;
   align-items: center;
   width: 280px;
   height: 50px;
   margin-bottom: 30px;
-  border: 3px solid var(--title-color);
-  box-shadow: 5px 5px var(--title-color);
+  border: 3px solid var(--shadow-color);
+  box-shadow: 5px 5px var(--shadow-color);
   cursor: pointer;
   transition: all .3s;
 }
 
 .list-links > li:nth-child(1) {
-  background-color: #f787ff;
+  background-color: #9455f4;
 }
 .list-links > li:nth-child(2) {
-  background-color: #30ebff;
+  background-color: #854ddc;
 }
 .list-links > li:nth-child(3) {
-  background-color: #ffb178;
+  background-color: #7644c3;
 }
 .list-links > li:nth-child(4) {
-  background-color: #baff86;
+  background-color: #683bab;
 }
 .list-links > li:nth-child(5) {
-  background-color: #4C84EB;
+  background-color: #593392;
 }
 
 .list-links > li > a {
