@@ -1,7 +1,7 @@
-# simple link page
+# Link Page
 
-forked from https://github.com/slydragonn/yt-link-in-bio
+This repo is currently being watched by an AWS instance. The live site is hosted at [wyatt.wtf](https://www.wyatt.wtf/).
 
-# preview
+## Preview
 
 ![preview](./images/link-site-preview.gif)
